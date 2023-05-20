@@ -13,6 +13,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/search', function () {
+    return view('search');
+})->name('search');
+
+//The route for the search nav button
 Route::get('/', function () {
-    return view('welcome');
-});
+    return view('search');
+})->name('search');
+
+//The route for the economics nav button
+Route::get('/economics', function () {
+    return view('economics');
+})->name('economics');
