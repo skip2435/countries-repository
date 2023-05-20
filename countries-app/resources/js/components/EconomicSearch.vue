@@ -20,13 +20,37 @@
                     <button @click="searchEconomicData" class="mt-2 w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Search</button>
                 </div>
 
-                <div v-if="economicData" class="p-4 bg-green-100 border-2 border-green-400 rounded">
-        <div v-for="entry in economicData" :key="entry.year">
-            <strong>Year:</strong> {{ entry.year }}<br/>
-            <strong>GDP per capita (current US$):</strong> {{ entry.gdpPerCapita }}
-        </div>
+                <div v-if="economicData" class="space-y-6">
+    <div v-for="entry in economicData" :key="entry.year" class="border rounded-lg shadow-sm p-4">
+        <div class="text-lg font-semibold mb-2">Year: {{ entry.year }}</div>
+        <dl class="space-y-2">
+            <div class="flex items-center space-x-2">
+                <dt class="font-semibold">GDP per capita (current US$):</dt>
+                <dd>{{ entry.gdpPerCapita }}</dd>
+            </div>
+            <div class="flex items-center space-x-2">
+                <dt class="font-semibold">Total GDP (current US$):</dt>
+                <dd>{{ entry.totalGdp }}</dd>
+            </div>
+            <div class="flex items-center space-x-2">
+                <dt class="font-semibold">Unemployment Rate (%):</dt>
+                <dd>{{ entry.unemploymentRate }}</dd>
+            </div>
+            <div class="flex items-center space-x-2">
+                <dt class="font-semibold">Inflation Rate (%):</dt>
+                <dd>{{ entry.inflationRate }}</dd>
+            </div>
+            <div class="flex items-center space-x-2">
+                <dt class="font-semibold">Interest Rate (%):</dt>
+                <dd>{{ entry.interestRate }}</dd>
+            </div>
+            <div class="flex items-center space-x-2">
+                <dt class="font-semibold">Income Inequality (GINI Index):</dt>
+                <dd>{{ entry.incomeInequality }}</dd>
+            </div>
+        </dl>
     </div>
-
+</div>
                 <div v-if="error" class="p-4 bg-red-100 border-2 border-red-400 rounded">{{ error }}</div>
             </div>
         </div>
