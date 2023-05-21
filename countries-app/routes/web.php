@@ -26,3 +26,8 @@ Route::get('/', function () {
 Route::get('/economics', function () {
     return view('economics');
 })->name('economics');
+
+//The route for the safety nav button
+Route::get('/safety', function () {
+    return view('safety');
+});

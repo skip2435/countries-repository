@@ -5,7 +5,7 @@
       <div class="w-full md:w-2/3 xl:w-1/2 2xl:w-1/3 flex justify-around text-white text-lg font-bold mx-auto">
       <a href="/search" class="hover:text-gray-300 hover:underline">Search</a>
 <a href="/economics" class="hover:text-gray-300 hover:underline">Economics</a>
-    <a href="#" class="hover:text-gray-300 hover:underline">Safety</a>
+    <a href="/safety" class="hover:text-gray-300 hover:underline">Safety</a>
       </div>
     </nav>
     <!-- End Navbar -->

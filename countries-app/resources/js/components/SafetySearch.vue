@@ -61,7 +61,6 @@
 <!-- Country Codes Section -->
 <div class="max-w-md mx-auto p-6 bg-white rounded-xl shadow-md items-center space-x-4" v-if="showCountryCodes">
 <h2 class="font-bold mb-2 text-lg text-center">World Bank Country Codes:</h2>
-<p class="mb-2 text-gray-700 text-sm">The WorldBank API doesn't list all country codes. For a more definitive list, refer to the <a href="https://wits.worldbank.org/WITS/wits/WITSHELP/Content/Codes/Country_Codes.htm#:~:text=%20%20%20%20Country%20Name%20%20,%20%20012%20%2095%20more%20rows%20" target="_blank" class="text-blue-500 underline">official WorldBank website</a>.</p>
 <button @click="toggleCountryCodes" class="mb-4 w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
 Hide Country Codes
 </button>
